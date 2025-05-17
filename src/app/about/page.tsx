@@ -10,12 +10,14 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Badge } from "@/components/ui/badge";
 
 export default function AboutPage() {
   return (
     <>
       <CardAbout />
       <CardExperience />
+      <CardTechStack />
     </>
   );
 }
@@ -70,6 +72,85 @@ function CardAbout() {
     </div>
   );
 }
+function CardTechStack() {
+  return (
+    <div className="min-h-[100vh]">
+      <div className="flex flex-col max-w-8xl justify-between items-start p-15">
+        <h1 className="pt-10 text-3xl pb-5">Tech Stack</h1>
+        <Card className="w-full">
+          <CardContent>
+            <div className="w-full flex flex-wrap justify-between flex-row gap-2 ">
+              <BadgeTechStack
+                link="/typescript-svgrepo-com.svg"
+                nameIcon="TypeScript"
+              />
+              <BadgeTechStack link="/icons8-nextjs-64.png" nameIcon="Next" />
+              <BadgeTechStack
+                link="/sequelize-svgrepo-com.svg"
+                nameIcon="Sequelize"
+              />
+              <BadgeTechStack link="/MongoDB.svg" nameIcon="MongoDB" />
+              <BadgeTechStack link="/Socket.io.svg" nameIcon="Socket.io" />
+              <BadgeTechStack
+                link="/icons8-expo.svg"
+                nameIcon="React Native Expo"
+              />
+              <BadgeTechStack link="/Redis.svg" nameIcon="Redis" />
+              <BadgeTechStack link="/GraphQL.svg" nameIcon="GraphQL" />
+              <BadgeTechStack link="/PostgresSQL.svg" nameIcon="PosgreSQL" />
+              <BadgeTechStack link="/icons8-apollo.svg" nameIcon="Apollo" />
+              <BadgeTechStack link="/Express.svg" nameIcon="Express" />
+              <BadgeTechStack link="/shadcn.webp" nameIcon="Shadcn" />
+              <BadgeTechStack
+                link="/tailwind-css-svgrepo-com.svg"
+                nameIcon="Tailwind CSS"
+              />
+              <BadgeTechStack link="/flowbite.svg" nameIcon="Flowbite" />
+              <BadgeTechStack
+                link="/bootstrap-plain.svg"
+                nameIcon="Bootstrap"
+              />
+              <BadgeTechStack link="/react.svg" nameIcon="React" />
+              <BadgeTechStack
+                link="/nodejs-svgrepo-com.svg"
+                nameIcon="Nodejs"
+              />
+              <BadgeTechStack link="/brand-vercel.svg" nameIcon="Vercel" />
+              <BadgeTechStack link="/firebase.svg" nameIcon="Firebase" />
+              <BadgeTechStack link="/Azios.png" nameIcon="Axios" />
+            </div>
+          </CardContent>
+        </Card>
+      </div>
+    </div>
+  );
+}
+
+type BadgeTechStackType = {
+  link: string;
+  nameIcon: string;
+  variant?: "default" | "neutral";
+};
+
+function BadgeTechStack({
+  link,
+  nameIcon,
+  variant = "default",
+}: BadgeTechStackType) {
+  return (
+    <Badge className="flex gap-5 p-2" variant={variant}>
+      <Image
+        src={link}
+        width={40}
+        height={40}
+        quality={100}
+        unoptimized={true}
+        alt={nameIcon}
+      />
+      <h1 className="text-2xl text-white font-extralight">{nameIcon}</h1>
+    </Badge>
+  );
+}
 function CardExperience() {
   return (
     <div className="min-h-[100vh]">
@@ -85,7 +166,7 @@ function CardExperience() {
 function TabExperience() {
   return (
     <Tabs defaultValue="education" className="max-w-[800px]">
-      <div className="flex flex-row justify-center items-center gap-10 w-full">
+      <div className="flex flex-col justify-start items-start w-full">
         <div>
           <h1 className="pt-10 text-3xl pb-5">Experiences</h1>
         </div>
