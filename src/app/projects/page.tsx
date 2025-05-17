@@ -32,7 +32,7 @@ function CardJumbotron() {
     <div className="min-h-[100vh]">
       <div className="flex flex-col max-w-8xl justify-between items-start md:p-10 sm:p-2.5">
         <h1 className="pt-10 text-3xl pb-5">My Projects</h1>
-        <div className="flex flex-row justify-center items-center gap-5">
+        <div className="gap-5">
           <Card>
             <CardContent>
               <div className="grid md:grid-cols-2 items-start sm:grid-cols-1 gap-5 max-w-6xl">

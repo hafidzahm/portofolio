@@ -17,10 +17,21 @@ export default function AboutPage() {
 function CardAbout() {
   return (
     <div className="min-h-[100vh]">
-      <div className="flex flex-col max-w-8xl justify-between items-start p-10">
+      <div className="flex flex-col max-w-8xl justify-between items-start sm:p-2.5 md:p-10">
         <h1 className="pt-10 text-3xl pb-5">About me</h1>
-        <div className="flex flex-row justify-center items-start">
-          <div>
+        <div className="grid grid-cols-1 md:grid-cols-2 justify-center items-start">
+          <div className="order-1 md:order-2">
+            <Image
+              alt="profile-pic"
+              src={"/profile.png"}
+              width={100}
+              height={100}
+              quality={100}
+              unoptimized={true}
+              className="w-6xl h-full p-5"
+            />
+          </div>
+          <div className="order-2 md:order-1">
             <p className="pb-10 text-lg">
               I'm Abdul Hafizh Mahfudin, a fullstack JavaScript developer with a
               passion for building practical and user-focused web applications.
@@ -48,17 +59,6 @@ function CardAbout() {
               and building digital products that make an impact.
             </p>
           </div>
-          <div>
-            <Image
-              alt="profile-pic"
-              src={"/profile.png"}
-              width={100}
-              height={100}
-              quality={100}
-              unoptimized={true}
-              className="w-6xl h-full"
-            />
-          </div>
         </div>
       </div>
     </div>
@@ -67,11 +67,12 @@ function CardAbout() {
 function CardTechStack() {
   return (
     <div className="min-h-[100vh]">
-      <div className="flex flex-col max-w-8xl justify-between items-start p-15">
+      <div className="flex flex-col w-full max-w-8xl justify-between items-start md:p-15">
         <h1 className="pt-10 text-3xl pb-5">Tech Stack</h1>
+
         <Card className="w-full">
           <CardContent>
-            <div className="w-full flex flex-wrap justify-between flex-row gap-2 ">
+            <div className="grid gap-2 sm:p-5 lg:grid-cols-4 md:grid-cols-2">
               <BadgeTechStack
                 link="/typescript-svgrepo-com.svg"
                 nameIcon="TypeScript"
@@ -83,10 +84,7 @@ function CardTechStack() {
               />
               <BadgeTechStack link="/MongoDB.svg" nameIcon="MongoDB" />
               <BadgeTechStack link="/Socket.io.svg" nameIcon="Socket.io" />
-              <BadgeTechStack
-                link="/icons8-expo.svg"
-                nameIcon="React Native Expo"
-              />
+              <BadgeTechStack link="/icons8-expo.svg" nameIcon="Expo" />
               <BadgeTechStack link="/Redis.svg" nameIcon="Redis" />
               <BadgeTechStack link="/GraphQL.svg" nameIcon="GraphQL" />
               <BadgeTechStack link="/PostgresSQL.svg" nameIcon="PosgreSQL" />
@@ -130,7 +128,7 @@ function BadgeTechStack({
   variant = "default",
 }: BadgeTechStackType) {
   return (
-    <Badge className="flex gap-5 p-2" variant={variant}>
+    <Badge className="flex p-10 gap-5" variant={variant}>
       <Image
         src={link}
         width={40}
@@ -139,14 +137,14 @@ function BadgeTechStack({
         unoptimized={true}
         alt={nameIcon}
       />
-      <h1 className="text-2xl text-white font-extralight">{nameIcon}</h1>
+      <h1 className="text-xl text-white font-extralight">{nameIcon}</h1>
     </Badge>
   );
 }
 function CardExperience() {
   return (
     <div className="min-h-[100vh]">
-      <div className="max-w-8xl p-10">
+      <div className="max-w-8xl sm:p-2.5 md:p-10">
         <div>
           <TabExperience />
         </div>
@@ -157,12 +155,12 @@ function CardExperience() {
 
 function TabExperience() {
   return (
-    <Tabs defaultValue="education" className="max-w-[800px]">
-      <div className="flex flex-col justify-start items-start w-full">
+    <Tabs defaultValue="education" className="max-w-[900px]">
+      <div className="flex flex-col h-full gap-10 md:flex-row justify-center items-center w-full">
         <div>
           <h1 className="pt-10 text-3xl pb-5">Experiences</h1>
         </div>
-        <TabsList className="grid w-full grid-cols-3">
+        <TabsList className="grid w-full h-full sm:grid-cols-1 sm:grid-rows-1 md:grid-cols-3">
           <TabsTrigger value="education">EDUCATION</TabsTrigger>
           <TabsTrigger value="work">WORK EXPERIENCE</TabsTrigger>
           <TabsTrigger value="certification">CERTIFICATION</TabsTrigger>

@@ -15,10 +15,10 @@ export default function Home() {
 function CardJumbotron() {
   return (
     <div className="min-h-[100vh]">
-      <div className="flex flex-col max-w-6xl justify-between items-start p-10">
+      <div className="flex flex-col max-w-6xl justify-between items-start sm:p-2.5 md:p-10">
         <h1 className="pt-10">Hey there!</h1>
-        <div className="flex flex-row justify-center items-center gap-5">
-          <h1 className="text-4xl py-5">I'm Abdul Hafizh Mahfudin </h1>{" "}
+        <div className="grid sm:grid-cols-1 md:grid-cols-2 justify-center items-center gap-5">
+          <h1 className=" text-4xl py-5">I'm Abdul Hafizh Mahfudin </h1>{" "}
           <SocialMediaHeader />
         </div>
         <p className="pb-10 text-lg">
@@ -43,7 +43,7 @@ function CardJumbotron() {
 
 function SocialMediaHeader() {
   return (
-    <>
+    <div className="flex flex-row gap-5 pb-5">
       <Link
         href={"https://www.linkedin.com/in/hafizxh/"}
         className="cursor-pointer"
@@ -59,7 +59,7 @@ function SocialMediaHeader() {
       >
         <Instagram color="blue" />
       </Link>
-    </>
+    </div>
   );
 }
 
@@ -67,7 +67,7 @@ function CardQuotes() {
   return (
     <>
       <div className="min-h-[100vh] flex justify-center items-center">
-        <div className="flex flex-col max-w-6xl justify-center items-center p-10">
+        <div className="flex flex-col max-w-6xl w-full justify-center items-center sm:p-2.5 md:p-10">
           <h1 className="text-5xl py-5 text-center">
             Crafting modern, user-centered web and mobile solutions.{" "}
           </h1>
@@ -78,8 +78,10 @@ function CardQuotes() {
           </p>
         </div>
       </div>
-      <footer className="flex justify-center items-center">
-        <h1>Updated May 2025 | Abdul Hafizh Mahfudin - All right reserved.</h1>
+      <footer className="flex justify-center items-center ">
+        <h1 className="font-extralight ">
+          Updated May 2025 | Abdul Hafizh Mahfudin - All right reserved.
+        </h1>
       </footer>
     </>
   );
