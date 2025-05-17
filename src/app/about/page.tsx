@@ -1,14 +1,6 @@
-import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Badge } from "@/components/ui/badge";
 
@@ -171,9 +163,9 @@ function TabExperience() {
           <h1 className="pt-10 text-3xl pb-5">Experiences</h1>
         </div>
         <TabsList className="grid w-full grid-cols-3">
-          <TabsTrigger value="education">Education</TabsTrigger>
-          <TabsTrigger value="work">Work Experience</TabsTrigger>
-          <TabsTrigger value="certification">Certification</TabsTrigger>
+          <TabsTrigger value="education">EDUCATION</TabsTrigger>
+          <TabsTrigger value="work">WORK EXPERIENCE</TabsTrigger>
+          <TabsTrigger value="certification">CERTIFICATION</TabsTrigger>
         </TabsList>
       </div>
       <TabsContent value="education">
