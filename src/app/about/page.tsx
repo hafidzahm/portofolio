@@ -1,7 +1,283 @@
+import { Button } from "@/components/ui/button";
+import Image from "next/image";
+import Link from "next/link";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+
 export default function AboutPage() {
   return (
-    <div>
-      <h1>About page</h1>
+    <>
+      <CardAbout />
+      <CardExperience />
+    </>
+  );
+}
+
+function CardAbout() {
+  return (
+    <div className="min-h-[100vh]">
+      <div className="flex flex-col max-w-8xl justify-between items-start p-10">
+        <h1 className="pt-10 text-3xl pb-5">About me</h1>
+        <div className="flex flex-row justify-center items-start">
+          <div>
+            <p className="pb-10 text-lg">
+              I'm Abdul Hafizh Mahfudin, a fullstack JavaScript developer with a
+              passion for building practical and user-focused web applications.
+              I made the shift from a retail career into tech through two full
+              scholarships — the DBS Foundation Coding Camp for front-end
+              development via Dicoding, and the Hacktiv8 Fullstack JavaScript
+              Bootcamp funded by ZakatLoop.
+            </p>
+            <p className="pb-10 text-lg">
+              My expertise is in front-end development using React, Next.js,
+              Tailwind CSS, and component libraries like ShadCN UI and Flowbite.
+              I focus on crafting responsive, accessible, and intuitive user
+              interfaces that work well across devices.
+            </p>
+            <p className="pb-10 text-lg">
+              On the backend, I work with Node.js, Express, PostgreSQL, and
+              MongoDB, building fullstack applications end-to-end. I also use
+              Next.js for SSR and API integration, and rely on TypeScript to
+              write safe, scalable code for complex applications.
+            </p>
+            <p className="pb-10 text-lg">
+              I’ve worked on real-world projects like budgeting apps, logistics
+              tools, and news platforms — always aiming for clean code and great
+              user experience. I enjoy working in teams, continuously learning,
+              and building digital products that make an impact.
+            </p>
+          </div>
+          <div>
+            <Image
+              alt="profile-pic"
+              src={"/profile.png"}
+              width={100}
+              height={100}
+              quality={100}
+              unoptimized={true}
+              className="w-6xl h-full"
+            />
+          </div>
+        </div>
+      </div>
     </div>
+  );
+}
+function CardExperience() {
+  return (
+    <div className="min-h-[100vh]">
+      <div className="max-w-8xl p-10">
+        <div>
+          <TabExperience />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function TabExperience() {
+  return (
+    <Tabs defaultValue="education" className="max-w-[800px]">
+      <div className="flex flex-row justify-center items-center gap-10 w-full">
+        <div>
+          <h1 className="pt-10 text-3xl pb-5">Experiences</h1>
+        </div>
+        <TabsList className="grid w-full grid-cols-3">
+          <TabsTrigger value="education">Education</TabsTrigger>
+          <TabsTrigger value="work">Work Experience</TabsTrigger>
+          <TabsTrigger value="certification">Certification</TabsTrigger>
+        </TabsList>
+      </div>
+      <TabsContent value="education">
+        <Card>
+          <CardContent className="grid gap-6">
+            <SectionCard
+              title="Full Stack JavaScript Immersive Program | Hacktiv8 (Remote)"
+              dateEvent="January 2025 - May 2025"
+              transcript="Transcript: Graduates"
+              link="https://drive.google.com/file/d/1ra2jlAGkEQ5O3feljQjT4BXS5CbzECjY/view?usp=drive_link"
+              points={[
+                `An intensive fullstack development bootcamp focused on building scalable web applications using JavaScript, React, Node.js, and related technologies.`,
+                `Awarded a full scholarship sponsored by ZakatLoop.`,
+              ]}
+            />
+            <SectionCard
+              title="  Dicoding x DBS Foundation Coding Camp 2024 – Bandung,
+              Indonesia (Remote)"
+              dateEvent="January 2024 - December 2024"
+              points={[
+                `Completed a structured front-end development program with an
+                emphasis on HTML, CSS, JavaScript, and React.`,
+                `Funded by the DBS Foundation Coding Camp scholarship`,
+              ]}
+            />
+            <SectionCard
+              title="Computer and Network Engineering | SMK Budi Mandiri – Sumedang, Indonesia"
+              dateEvent="2016 – 2019"
+              points={[
+                `Studied basic computer systems, LAN configuration, network troubleshooting, and Windows OS installation.`,
+              ]}
+            />
+          </CardContent>
+        </Card>
+      </TabsContent>
+      <TabsContent value="work">
+        <Card>
+          <CardContent className="grid gap-6">
+            <SectionCard
+              title="Retail Employee — PT. Toserba Selamat, Cianjur"
+              dateEvent="February 2020 – July 2024"
+              points={[
+                `Provided daily in-person customer service to 200+ customers in a fast-paced retail environment`,
+                `Assisted in inventory management and restocking, reducing out-of-stock issues by 15%`,
+              ]}
+            />
+            <SectionCard
+              title="IT Intern — PT. Baraya Telematika Nusantara, Jatinangor"
+              dateEvent="July 2019 – September 2019"
+              points={[
+                `Installed CCTV systems across multiple buildings, ensuring full area coverage with no blind spots`,
+                `Conducted routine maintenance to maintain 100% system uptime`,
+              ]}
+            />
+            <SectionCard
+              title="IT Intern — West Java Housing and Settlement Agency (Dinas Perumahan dan Permukiman), Bandung"
+              dateEvent="January 2018 – March 2018"
+              points={[
+                `Configured LAN networks, installed routers/switches, and performed local device setup`,
+                ` Installed Windows OS and handled basic network troubleshooting`,
+              ]}
+            />
+          </CardContent>
+        </Card>
+      </TabsContent>
+      <TabsContent value="certification">
+        <Card>
+          <CardContent className="grid gap-6">
+            <SectionCertificate
+              title="Full Stack Javascript Developer | Hacktiv8"
+              dateEvent="May 2025"
+              certificateId="-"
+              link="https://drive.google.com/file/d/1ru2puSAQ6m63InbLXZ26fugkwuhNJuVg/view?usp=drive_link"
+            />
+            <SectionCertificate
+              title="Expert Front End Development | Dicoding Indonesia"
+              dateEvent="December 2024"
+              certificateId="1RXY2D3E1XVM"
+              link="https://www.dicoding.com/certificates/1RXY2D3E1XVM"
+            />
+            <SectionCertificate
+              title="Expert Front End Development | DBS Foundation Coding Camp 2024"
+              dateEvent="December 2024"
+              certificateId="DCC2024/PS/L3-FE-001"
+              link="https://drive.google.com/file/d/14e9rbigA_kRlOUGrH_gOA9AX9XMncv5h/view?usp=drive_link"
+            />
+            <SectionCertificate
+              title="Developing Front-End Apps with React | Coursera"
+              dateEvent="November 2024"
+              certificateId="BVK35K3DJBBF"
+              link="https://www.coursera.org/account/accomplishments/verify/BVK35K3DJBBF"
+            />
+            <SectionCertificate
+              title="Sertifikat Belajar ReactJS"
+              dateEvent="November 2024"
+              certificateId="BVK35K3DJBBF"
+              link="https://codepolitan.com/c/WMIH2GM"
+            />
+            <SectionCertificate
+              title="JavaScript (Basic) Certificate"
+              dateEvent="May 2025"
+              certificateId="ad8f8c4da112"
+              link="https://www.hackerrank.com/certificates/ad8f8c4da112"
+            />
+            <SectionCertificate
+              title=" React (Basic) Certificate"
+              dateEvent="May 2025"
+              certificateId="8ede3867ff8c"
+              link="https://www.hackerrank.com/certificates/8ede3867ff8c"
+            />
+            <SectionCertificate
+              title="CSS (Basic) Certificate"
+              dateEvent="May 2025"
+              certificateId="e7c4a2fa323e"
+              link="https://www.hackerrank.com/certificates/e7c4a2fa323e"
+            />
+          </CardContent>
+        </Card>
+      </TabsContent>
+    </Tabs>
+  );
+}
+
+type SectionCard = {
+  title: string;
+  dateEvent: string;
+  points: string[];
+  link?: string;
+  transcript?: string;
+};
+type SectionCertificate = {
+  title: string;
+  dateEvent: string;
+  certificateId: string;
+  link: string;
+};
+
+function SectionCard({
+  title,
+  dateEvent,
+  points,
+  link = "",
+  transcript = "",
+}: SectionCard) {
+  return (
+    <section className="pb-5">
+      <div className="pb-5">
+        <h1 className="text-xl">{title}</h1>
+        <h1 className="font-light">{dateEvent}</h1>
+        <h1 className="font-light">
+          <Link href={link} className="focus:font-bold">
+            {transcript}
+          </Link>
+        </h1>
+      </div>
+      <div>
+        {points.map((point, index) => {
+          return (
+            <h1 key={index} className="font-light">
+              ▸ {point}
+            </h1>
+          );
+        })}
+      </div>
+    </section>
+  );
+}
+function SectionCertificate({
+  title,
+  dateEvent,
+  certificateId,
+  link,
+}: SectionCertificate) {
+  return (
+    <section className="pb-5">
+      <div>
+        <Link href={link}>
+          <h1 className="text-xl">{title}</h1>
+        </Link>
+        <h1 className="font-light">Issued: {dateEvent}</h1>
+        <h1 className="font-light">
+          Certificate ID:
+          {certificateId}
+        </h1>
+      </div>
+    </section>
   );
 }
