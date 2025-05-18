@@ -1,3 +1,4 @@
+"use client";
 import {
   apollo,
   axios,
@@ -16,8 +17,18 @@ import {
   typescript,
   vercel,
 } from "@/components/IconTechStack";
-import { Card, CardContent } from "@/components/ui/card";
 import ImageCard from "@/components/ui/image-card";
+import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { Textarea } from "@/components/ui/textarea";
 
 export default function ProjectPage() {
   return (
@@ -29,8 +40,8 @@ export default function ProjectPage() {
 
 function CardJumbotron() {
   return (
-    <div className="min-h-[100vh]">
-      <div className="flex flex-col max-w-8xl justify-between items-start md:p-10 sm:p-2.5">
+    <div className="min-h-[100vh] pb-20">
+      <div className="flex flex-col max-w-5xl justify-between items-start md:p-10 sm:p-2.5">
         <h1 className="pt-10 text-3xl pb-5">My Projects</h1>
         <div className="gap-5">
           <Card>
@@ -120,6 +131,64 @@ function CardJumbotron() {
           </Card>
         </div>
       </div>
+    </div>
+  );
+}
+
+function EmailForm() {
+  return (
+    <div className="flex justify-center items-center">
+      <Card className="w-full max-w-4xl">
+        <CardHeader>
+          <CardTitle>Contact me with filling this form</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <form
+            onSubmit={(e) => {
+              e.preventDefault(); // Prevent default form submission
+              const name = (document.getElementById("name") as HTMLInputElement)
+                .value;
+              const email = (
+                document.getElementById("email") as HTMLInputElement
+              ).value;
+              const message = (
+                document.querySelector("textarea") as HTMLTextAreaElement
+              ).value;
+
+              // Construct mailto URL
+              const mailtoLink = `mailto:hafizhahm123@gmail.com?subject=Contact%20Form%20Submission&body=Name:%20${encodeURIComponent(
+                name
+              )}%0AEmail:%20${encodeURIComponent(
+                email
+              )}%0A%0A${encodeURIComponent(message)}`;
+
+              // Open mailto link in a new tab
+              window.open(mailtoLink, "_blank");
+            }}
+          >
+            <div className="flex flex-col gap-6">
+              <div className="grid gap-2">
+                <Label htmlFor="name">Name</Label>
+                <Input id="name" type="text" placeholder="John Doe " required />
+                <Label htmlFor="email">Email</Label>
+                <Input
+                  id="email"
+                  type="email"
+                  placeholder="m@example.com"
+                  required
+                />
+                <Label htmlFor="message">Message</Label>
+                <Textarea placeholder="Lets connect!" />
+              </div>
+            </div>
+            <CardFooter className="flex-col gap-2 pt-5">
+              <Button type="submit" className="w-full">
+                Submit
+              </Button>
+            </CardFooter>
+          </form>
+        </CardContent>
+      </Card>
     </div>
   );
 }
