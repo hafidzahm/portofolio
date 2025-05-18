@@ -22,7 +22,7 @@ function CardJumbotron() {
       <div className="flex flex-col max-w-6xl justify-between items-start sm:p-2.5 md:p-10">
         <h1 className="pt-10">Hey there!</h1>
         <div className="grid sm:grid-cols-1 md:grid-cols-2 justify-center items-center gap-5">
-          <h1 className=" text-4xl py-5">I'm Abdul Hafizh Mahfudin </h1>{" "}
+          <h1 className=" text-4xl py-5">I&apos;m Abdul Hafizh Mahfudin </h1>{" "}
           <SocialMediaHeader />
         </div>
         <p className="pb-10 text-lg">

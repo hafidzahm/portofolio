@@ -216,6 +216,7 @@ function MenubarShortcut({
 
 function MenubarSubTrigger({
   className,
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   inset,
   children,
   ...props

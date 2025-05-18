@@ -38,12 +38,12 @@ function CardAbout() {
           </div>
           <div className="order-2 md:order-1">
             <p className="pb-10 text-lg">
-              I'm Abdul Hafizh Mahfudin, a fullstack JavaScript developer with a
-              passion for building practical and user-focused web applications.
-              I made the shift from a retail career into tech through two full
-              scholarships — the DBS Foundation Coding Camp for front-end
-              development via Dicoding, and the Hacktiv8 Fullstack JavaScript
-              Bootcamp funded by ZakatLoop.
+              I&apos;m Abdul Hafizh Mahfudin, a fullstack JavaScript developer
+              with a passion for building practical and user-focused web
+              applications. I made the shift from a retail career into tech
+              through two full scholarships — the DBS Foundation Coding Camp for
+              front-end development via Dicoding, and the Hacktiv8 Fullstack
+              JavaScript Bootcamp funded by ZakatLoop.
             </p>
             <p className="pb-10 text-lg">
               My expertise is in front-end development using React, Next.js,
