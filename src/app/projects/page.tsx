@@ -1,4 +1,3 @@
-"use client";
 import {
   apollo,
   axios,
@@ -29,6 +28,11 @@ import {
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Projects | Abdul Hafizh",
+};
 
 export default function ProjectPage() {
   return (
@@ -49,7 +53,7 @@ function CardJumbotron() {
               <div className="grid md:grid-cols-2 items-start sm:grid-cols-1 gap-5 max-w-6xl">
                 <ImageCard
                   caption="Geraimedia"
-                  imageUrl="https://hips.hearstapps.com/hmg-prod/images/flowers-trees-and-bushes-reach-their-peak-of-full-bloom-in-news-photo-1678292967.jpg?resize=300:*"
+                  imageUrl="/geraimedia-img.png"
                   icon={[mongodb, next, vercel, typescript]}
                   projectLink="https://geraimedia.vercel.app"
                   description="A ecommerce book application inspired by Geraimedia, implementing basic auth, Login by Google,
@@ -58,7 +62,7 @@ function CardJumbotron() {
                 ></ImageCard>
                 <ImageCard
                   caption="Stockify"
-                  imageUrl="https://hips.hearstapps.com/hmg-prod/images/flowers-trees-and-bushes-reach-their-peak-of-full-bloom-in-news-photo-1678292967.jpg?resize=300:*"
+                  imageUrl="/stockify.png"
                   icon={[
                     typescript,
                     react,
@@ -75,7 +79,7 @@ function CardJumbotron() {
                 ></ImageCard>
                 <ImageCard
                   caption="Tumbear Mobile App"
-                  imageUrl="https://hips.hearstapps.com/hmg-prod/images/flowers-trees-and-bushes-reach-their-peak-of-full-bloom-in-news-photo-1678292967.jpg?resize=300:*"
+                  imageUrl="/tumbear.jpg"
                   icon={[apollo, mongodb, expo, redis, typescript, vercel]}
                   projectLink="https://github.com/hafidzahm/tumbear"
                   description="A mobile application inspired by Tumblr, implementing basic auth, Login by Google, and server-client
@@ -83,7 +87,7 @@ function CardJumbotron() {
                 ></ImageCard>
                 <ImageCard
                   caption="TechSolve | Your Solve Buddy"
-                  imageUrl="https://hips.hearstapps.com/hmg-prod/images/flowers-trees-and-bushes-reach-their-peak-of-full-bloom-in-news-photo-1678292967.jpg?resize=300:*"
+                  imageUrl="/techsolve.png"
                   icon={[
                     tailwind,
                     flowbite,
@@ -101,7 +105,7 @@ function CardJumbotron() {
                 ></ImageCard>
                 <ImageCard
                   caption="TechNows | Read, Save, and Summarize News"
-                  imageUrl="https://hips.hearstapps.com/hmg-prod/images/flowers-trees-and-bushes-reach-their-peak-of-full-bloom-in-news-photo-1678292967.jpg?resize=300:*"
+                  imageUrl="/technows.png"
                   icon={[
                     tailwind,
                     flowbite,
@@ -120,7 +124,7 @@ function CardJumbotron() {
                 ></ImageCard>
                 <ImageCard
                   caption="Yummy YUM!"
-                  imageUrl="https://hips.hearstapps.com/hmg-prod/images/flowers-trees-and-bushes-reach-their-peak-of-full-bloom-in-news-photo-1678292967.jpg?resize=300:*"
+                  imageUrl="/yummy-yum-img.png"
                   icon={[]}
                   projectLink="https://deploy-preview-39--yummy-yum.netlify.app/"
                   description="A mobile and web based mock-up for restaurant, implemented mobile-first design, web-app manifest,

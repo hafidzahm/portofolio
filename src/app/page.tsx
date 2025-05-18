@@ -2,7 +2,11 @@ import { Button } from "@/components/ui/button";
 import { Github, Instagram, Linkedin } from "lucide-react";
 import Link from "next/link";
 import React from "react";
+import { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: "Abdul Hafizh Mahfudin",
+};
 export default function Home() {
   return (
     <>
