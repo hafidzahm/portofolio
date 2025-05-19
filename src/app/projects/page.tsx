@@ -7,6 +7,7 @@ import {
   flowbite,
   mongodb,
   next,
+  node,
   posgresql,
   react,
   redis,
@@ -41,6 +42,13 @@ function CardJumbotron() {
           <Card>
             <CardContent>
               <div className="grid md:grid-cols-2 items-start sm:grid-cols-1 gap-5 max-w-6xl">
+                <ImageCard
+                  caption="Pendekin API (PROGRESS)"
+                  imageUrl="/pendekin-api.png"
+                  icon={[sequelize, express, node]}
+                  projectLink="https://pendekin-api.hafizh.web.id/r/pendekin-postman-docs"
+                  description="Pendekin API is a URL shortener backend service that allows users to register, log in, and create short links that redirect to original URLs via endpoints like /r/:shortId. It includes JWT authentication and user-specific link management features."
+                ></ImageCard>
                 <ImageCard
                   caption="Geraimedia"
                   imageUrl="/geraimedia-img.png"
