@@ -2,6 +2,7 @@ import { cn } from "@/lib/utils";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { IconType } from "@/types";
 import Link from "next/link";
+import { HoverCard, HoverCardContent, HoverCardTrigger } from "./hover-card";
 
 type Props = {
   imageUrl: string;
@@ -43,10 +44,15 @@ export default function ImageCard({
         <div className="border-t-2 bg-background text-main-foreground flex flex-row w-full flex-wrap gap-3 border-border p-4">
           {icon?.map((el, index) => {
             return (
-              <Avatar key={index}>
-                <AvatarImage src={el.iconStack} alt={el.iconInitial} />
-                <AvatarFallback>{el.iconInitial}</AvatarFallback>
-              </Avatar>
+              <HoverCard key={index}>
+                <HoverCardTrigger asChild>
+                  <Avatar>
+                    <AvatarImage src={el.iconStack} alt={el.iconInitial} />
+                    <AvatarFallback>{el.iconInitial}</AvatarFallback>
+                  </Avatar>
+                </HoverCardTrigger>
+                <HoverCardContent>{el.iconName}</HoverCardContent>
+              </HoverCard>
             );
           })}
         </div>

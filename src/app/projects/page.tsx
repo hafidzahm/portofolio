@@ -42,9 +42,26 @@ function CardJumbotron() {
           <Card>
             <div className="grid md:grid-cols-2 items-start sm:grid-cols-1 p-2.5 gap-5 max-w-6xl">
               <ImageCard
+                caption="Quizz!"
+                imageUrl="/quizzz.png"
+                icon={[
+                  sequelize,
+                  express,
+                  node,
+                  redis,
+                  react,
+                  vercel,
+                  tailwind,
+                  flowbite,
+                  axios,
+                ]}
+                projectLink="https://quizzz-swart.vercel.app/"
+                description="Welcome to Quizzz — your go-to app for fun, fast, and smart quizzes! Challenge yourself, learn new things, or just enjoy a quick brain break. From general knowledge to science and pop culture, there’s always something new to try."
+              ></ImageCard>
+              <ImageCard
                 caption="Pendekin API (PROGRESS)"
                 imageUrl="/pendekin-api.png"
-                icon={[sequelize, express, node]}
+                icon={[sequelize, express, node, redis]}
                 projectLink="https://pendekin-api.hafizh.web.id/r/pendekin-postman-docs"
                 description="Pendekin API is a URL shortener backend service that allows users to register, log in, and create short links that redirect to original URLs via endpoints like /r/:shortId. It includes JWT authentication and user-specific link management features."
               ></ImageCard>

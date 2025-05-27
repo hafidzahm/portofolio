@@ -4,6 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Badge } from "@/components/ui/badge";
 import { Metadata } from "next";
+import { HoverCardWithLink } from "@/components/HoverCardWithLink";
 
 export const metadata: Metadata = {
   title: "About | Abdul Hafizh",
@@ -26,14 +27,19 @@ function CardAbout() {
         <h1 className="pt-10 text-3xl pb-5">About me</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 justify-center items-start">
           <div className="order-1 md:order-2">
-            <Image
-              alt="profile-pic"
-              src={"/profile.png"}
-              width={100}
-              height={100}
-              quality={100}
-              unoptimized={true}
-              className="w-6xl h-full p-5"
+            <HoverCardWithLink
+              hoverContent="Hi, nice to meet you! 😄"
+              trigger={
+                <Image
+                  alt="profile-pic"
+                  src={"/profile.png"}
+                  width={100}
+                  height={100}
+                  quality={100}
+                  unoptimized={true}
+                  className="w-6xl h-full p-5"
+                />
+              }
             />
           </div>
           <div className="order-2 md:order-1">
@@ -174,16 +180,25 @@ function TabExperience() {
       <TabsContent value="education">
         <Card>
           <CardContent className="grid gap-6">
-            <SectionCard
-              title="Full Stack JavaScript Immersive Program | Hacktiv8 (Remote)"
-              dateEvent="January 2025 - May 2025"
-              transcript="Transcript: Graduates"
-              link="https://drive.google.com/file/d/1ra2jlAGkEQ5O3feljQjT4BXS5CbzECjY/view?usp=drive_link"
-              points={[
-                `An intensive fullstack development bootcamp focused on building scalable web applications using JavaScript, React, Node.js, and related technologies.`,
-                `Awarded a full scholarship sponsored by ZakatLoop.`,
-              ]}
+            <HoverCardWithLink
+              contentLink={
+                "https://drive.google.com/file/d/1ra2jlAGkEQ5O3feljQjT4BXS5CbzECjY/view?usp=drive_link"
+              }
+              trigger={
+                <SectionCard
+                  title="Full Stack JavaScript Immersive Program | Hacktiv8 (Remote)"
+                  dateEvent="January 2025 - May 2025"
+                  transcript="Transcript: Graduates"
+                  link="https://drive.google.com/file/d/1ra2jlAGkEQ5O3feljQjT4BXS5CbzECjY/view?usp=drive_link"
+                  points={[
+                    `An intensive fullstack development bootcamp focused on building scalable web applications using JavaScript, React, Node.js, and related technologies.`,
+                    `Awarded a full scholarship sponsored by ZakatLoop.`,
+                  ]}
+                />
+              }
+              hoverContent={"See transcript here"}
             />
+
             <SectionCard
               title="  Dicoding x DBS Foundation Coding Camp 2024 – Bandung,
               Indonesia (Remote)"

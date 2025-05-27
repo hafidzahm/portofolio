@@ -34,10 +34,11 @@ function CardJumbotron() {
         </p>
         <Link
           href={
-            "https://drive.google.com/file/d/1bJd-eOhh1bj5rjVq6kDMej6nCxyLt_Fk/view?usp=drive_link"
+            "https://drive.google.com/file/d/1Z_XDKVCHU0BtPN-5zDZkrzjUH7-plgJ9/view?usp=drive_link"
           }
           className="cursor-pointer"
         >
+          {/* last update on 27.05 ver. 23.05 */}
           <Button>Download CV</Button>
         </Link>
       </div>
@@ -85,7 +86,10 @@ function CardQuotes() {
       <footer className="flex flex-col w-full justify-center items-center ">
         <h1 className="font-extralight text-center">hafizhahm123@gmail.com</h1>
         <h1 className="font-extralight text-center">
-          Updated May 2025 | Abdul Hafizh Mahfudin - All right reserved.
+          Last Update on 27 May 2025
+        </h1>
+        <h1 className="font-extralight text-center">
+          - All right reserved, 2025.
         </h1>
       </footer>
     </>
