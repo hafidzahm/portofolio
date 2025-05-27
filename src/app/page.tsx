@@ -72,7 +72,7 @@ function CardQuotes() {
     <>
       <div className="min-h-[100vh] flex justify-center items-center">
         <div className="flex flex-col max-w-6xl w-full justify-center items-center sm:p-2.5 md:p-10">
-          <h1 className="text-5xl py-5 text-center">
+          <h1 className="text-3xl md:text-5xl py-5 text-center">
             Crafting modern, user-centered web and mobile solutions.{" "}
           </h1>
           <p className="pb-10 text-center">
@@ -82,8 +82,9 @@ function CardQuotes() {
           </p>
         </div>
       </div>
-      <footer className="flex justify-center items-center ">
-        <h1 className="font-extralight ">
+      <footer className="flex flex-col w-full justify-center items-center ">
+        <h1 className="font-extralight text-center">hafizhahm123@gmail.com</h1>
+        <h1 className="font-extralight text-center">
           Updated May 2025 | Abdul Hafizh Mahfudin - All right reserved.
         </h1>
       </footer>
