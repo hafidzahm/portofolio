@@ -86,10 +86,12 @@ function CardJumbotron() {
                   mongodb,
                   axios,
                 ]}
-                projectLink="https://github.com/rmt-59-finalproject/client"
+                projectLink="https://stockify-project.web.app"
                 description="Stockify was created to solve the inefficiencies and errors that often arise from manual, paper-based
-
-                  logistics processes."
+                  logistics processes.
+                  Account list:
+                  (Driver) username: hafizh, password: batagor; (Warehouse) username: stockify, password: batagor; (Outlet) username: hektip-hck | hektip-bsd | hektip-rmt, password: batagor
+                  "
               ></ImageCard>
               <ImageCard
                 caption="Tumbear Mobile App"
