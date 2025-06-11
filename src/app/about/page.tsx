@@ -9,7 +9,7 @@ import { HoverCardWithLink } from "@/components/HoverCardWithLink";
 export const metadata: Metadata = {
   title: "About | Abdul Hafizh",
   description:
-    "Fueled by dual scholarships, Abdul Hafizh Mahfudin transitioned from retail to tech, now excelling as a Fullstack JavaScript Developer. He builds complete, user-centric applications using React, Next.js, and Node.js, driven by a passion for clean code and creating impactful digital tools.",
+    "Fueled by dual scholarships, Abdul Hafizh Mahfudin transitioned from retail to tech, now excelling as a Fullstack JavaScript Developer.",
 };
 
 export default function AboutPage() {

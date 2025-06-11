@@ -6,8 +6,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Abdul Hafizh Mahfudin",
-  description:
-    "Proficient across the JavaScript ecosystem, Abdul Hafizh Mahfudin is a Fullstack Developer specializing in the MERN/PERN stack. He combines front-end expertise in React and Next.js with back-end skills in Node.js to deliver robust, scalable, and user-focused web applications.",
+  description: "💻 Hi, welcome to my portofolio! 💻",
 };
 export default function Home() {
   return (

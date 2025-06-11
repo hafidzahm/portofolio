@@ -24,7 +24,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Projects | Abdul Hafizh",
   description:
-    "Here are my full-stack projects, built using a modern JavaScript stack. They showcase my skills in developing complete applications—including back-end APIs and responsive UIs—with React, Next.js, Node.js, and TypeScript.",
+    "Here are my full-stack projects, built using a modern JavaScript stack.",
 };
 
 export default function ProjectPage() {
