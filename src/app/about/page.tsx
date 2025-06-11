@@ -5,6 +5,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Badge } from "@/components/ui/badge";
 import { Metadata } from "next";
 import { HoverCardWithLink } from "@/components/HoverCardWithLink";
+import FadeContent from "@/components/FadeContent";
 
 export const metadata: Metadata = {
   title: "About | Abdul Hafizh",
@@ -29,20 +30,27 @@ function CardAbout() {
         <h1 className="pt-10 text-3xl pb-5">About me</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 justify-center items-start">
           <div className="order-1 md:order-2">
-            <HoverCardWithLink
-              hoverContent="Hi, nice to meet you! 😄"
-              trigger={
-                <Image
-                  alt="profile-pic"
-                  src={"/profile.png"}
-                  width={100}
-                  height={100}
-                  quality={100}
-                  unoptimized={true}
-                  className="w-6xl h-full p-5"
-                />
-              }
-            />
+            <FadeContent
+              blur={true}
+              duration={1000}
+              easing="ease-out"
+              initialOpacity={0}
+            >
+              <HoverCardWithLink
+                hoverContent="Hi, nice to meet you! 😄"
+                trigger={
+                  <Image
+                    alt="profile-pic"
+                    src={"/profile.png"}
+                    width={100}
+                    height={100}
+                    quality={100}
+                    unoptimized={true}
+                    className="w-6xl h-full p-5"
+                  />
+                }
+              />
+            </FadeContent>
           </div>
           <div className="order-2 md:order-1">
             <p className="pb-10 text-lg">

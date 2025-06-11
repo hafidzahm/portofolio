@@ -3,6 +3,8 @@ import { Github, Instagram, Linkedin } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 import { Metadata } from "next";
+import Magnet from "@/components/Magnet";
+import TrueFocus from "@/components/TrueFocus";
 
 export const metadata: Metadata = {
   title: "Abdul Hafizh Mahfudin",
@@ -40,7 +42,9 @@ function CardJumbotron() {
           className="cursor-pointer"
         >
           {/* last update on 27.05 ver. 23.05 */}
-          <Button>Download CV</Button>
+          <Magnet padding={100} disabled={false} magnetStrength={2}>
+            <Button>Download CV</Button>
+          </Magnet>
         </Link>
       </div>
     </div>
@@ -74,10 +78,16 @@ function CardQuotes() {
     <>
       <div className="min-h-[100vh] flex justify-center items-center">
         <div className="flex flex-col max-w-6xl w-full justify-center items-center sm:p-2.5 md:p-10">
-          <h1 className="text-3xl md:text-5xl py-5 text-center">
-            Crafting modern, user-centered web and mobile solutions.{" "}
-          </h1>
-          <p className="pb-10 text-center">
+          <TrueFocus
+            sentence="Crafting modern, user-centered web and mobile solutions."
+            manualMode={true}
+            blurAmount={3}
+            borderColor="blue"
+            animationDuration={1}
+            pauseBetweenAnimations={0}
+          />
+
+          <p className="pt-5 text-center">
             I enjoy building fullstack applications that solve real problems —
             from financial tools to social platforms — helping businesses and
             users connect through functional, intuitive experiences.
