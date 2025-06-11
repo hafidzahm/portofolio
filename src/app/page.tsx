@@ -6,6 +6,8 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Abdul Hafizh Mahfudin",
+  description:
+    "Proficient across the JavaScript ecosystem, Abdul Hafizh Mahfudin is a Fullstack Developer specializing in the MERN/PERN stack. He combines front-end expertise in React and Next.js with back-end skills in Node.js to deliver robust, scalable, and user-focused web applications.",
 };
 export default function Home() {
   return (
@@ -86,7 +88,7 @@ function CardQuotes() {
       <footer className="flex flex-col w-full justify-center items-center ">
         <h1 className="font-extralight text-center">hafizhahm123@gmail.com</h1>
         <h1 className="font-extralight text-center">
-          Last Update on June, 10, 2025
+          Last Update on June, 11, 2025
         </h1>
         <h1 className="font-extralight text-center">
           - All right reserved, 2025.
