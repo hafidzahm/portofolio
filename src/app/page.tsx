@@ -97,8 +97,9 @@ function CardQuotes() {
       <footer className="flex flex-col w-full justify-center items-center ">
         <h1 className="font-extralight text-center">hafizhahm123@gmail.com</h1>
         <h1 className="font-extralight text-center">
-          Last Update on June, 11, 2025
+          Last Update on June, 14, 2025
         </h1>
+        {/* CV: V23.05  */}
         <h1 className="font-extralight text-center">
           - All right reserved, 2025.
         </h1>
