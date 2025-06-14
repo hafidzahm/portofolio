@@ -76,18 +76,18 @@ function SocialMediaHeader() {
 function CardQuotes() {
   return (
     <>
-      <div className="min-h-[100vh] flex justify-center items-center">
+      <div className="min-h-[100vh] pt-60 lg:pt-0  flex justify-center items-center">
         <div className="flex flex-col max-w-6xl w-full justify-center items-center sm:p-2.5 md:p-10">
           <TrueFocus
             sentence="Crafting modern, user-centered web and mobile solutions."
-            manualMode={true}
+            manualMode={false}
             blurAmount={3}
             borderColor="blue"
             animationDuration={1}
             pauseBetweenAnimations={0}
           />
 
-          <p className="pt-5 text-center">
+          <p className="pt-20 lg:pt-15 text-center">
             I enjoy building fullstack applications that solve real problems —
             from financial tools to social platforms — helping businesses and
             users connect through functional, intuitive experiences.

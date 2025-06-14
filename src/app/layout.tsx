@@ -34,15 +34,7 @@ export default function RootLayout({
           </ClickSpark>
         </div>
 
-        <div
-          style={{
-            position: "relative",
-            overflow: "hidden",
-            minHeight: "300px",
-            maxHeight: "100px",
-            width: "100%",
-          }}
-        >
+        <div className="relative overflow-hidden min-h-[150px] max-h-[150px] lg:min-h-[300px] lg:max-h-[100px] w-full">
           <Ballpit
             count={50}
             gravity={0.3}
