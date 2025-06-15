@@ -138,7 +138,7 @@ function CardJumbotron() {
                 description="A web based application to read, save news, and summarize feature by Gemini AI API, and enabling
                   Login by Google auth, implementing authenication and authorization with JWT and Bcryptjs, and
                   Redux for managing react state, implementing Firebase for client hosting and AWS for server hosting.
-                  And got >85% coverage testing"
+                  And got >85% coverage testing, Email / password demo: demo@example.com / demo123"
               ></ImageCard>
               <ImageCard
                 caption="Yummy YUM!"
