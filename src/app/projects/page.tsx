@@ -99,9 +99,9 @@ function CardJumbotron() {
                 caption="Tumbear Mobile App"
                 imageUrl="/tumbear.jpg"
                 icon={[apollo, mongodb, expo, redis, typescript, vercel]}
-                projectLink="https://github.com/hafidzahm/tumbear"
+                projectLink="https://pendekin-api.hafizh.web.id/r/build-preview-expo"
                 description="A mobile application inspired by Tumblr, implementing basic auth, Login by Google, and server-client
-                  caching"
+                  caching. Open the demo with Expo Go (Play Store/ App Store) and scan this QR code to launch demo"
               ></ImageCard>
               <ImageCard
                 caption="TechSolve | Your Solve Buddy"
