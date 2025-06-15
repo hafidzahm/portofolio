@@ -119,7 +119,7 @@ function CardJumbotron() {
                 projectLink="https://techsolve.hafizh.web.id"
                 description="A web based application to read, create a problem-to-solve, answer with other user realtime, answer
                   with Gemini AI, and upvote/ downvote forum answer, include authentication, authorization and Login
-                  by Google implementation, implementing Firebase for client hosting and AWS for server hosting."
+                  by Google implementation, implementing Firebase for client hosting and AWS for server hosting. Reload first before launching demo (loading issue). Email/ password demo: demo@example.com / demo123"
               ></ImageCard>
               <ImageCard
                 caption="TechNows | Read, Save, and Summarize News"
