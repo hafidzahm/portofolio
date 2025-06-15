@@ -141,6 +141,22 @@ function CardJumbotron() {
                   And got >85% coverage testing, Email / password demo: demo@example.com / demo123"
               ></ImageCard>
               <ImageCard
+                caption="Windpoin CMS Portal & News Portal"
+                imageUrl="/windpoin.png"
+                icon={[
+                  tailwind,
+                  flowbite,
+                  posgresql,
+                  express,
+                  sequelize,
+                  axios,
+                  react,
+                  firebase,
+                ]}
+                projectLink="https://windpoin.hafizh.web.id/"
+                description="CMS news portal web inspiration by Winpoin Indonesia. CMS Portal on https://ch02-cms.web.app . Email / password demo: admin@example.com / 12345"
+              ></ImageCard>
+              <ImageCard
                 caption="Yummy YUM!"
                 imageUrl="/yummy-yum-img.png"
                 icon={[]}
