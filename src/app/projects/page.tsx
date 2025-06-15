@@ -74,7 +74,7 @@ function CardJumbotron() {
                 projectLink="https://geraimedia.vercel.app"
                 description="A ecommerce book application inspired by Geraimedia, implementing basic auth, Login by Google,
                   implementing SSR and CSR component render by Nextjs, and infinite scroll. This project created with
-                  Typescript, deployed with Vercel CLI"
+                  Typescript, deployed with Vercel CLI. Email / password demo: demo@example.com / demo123"
               ></ImageCard>
               <ImageCard
                 caption="Stockify"
