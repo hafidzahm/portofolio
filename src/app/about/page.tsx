@@ -234,7 +234,7 @@ function TabExperience() {
           <CardContent className="grid gap-6">
             <SectionCard
               title="Retail Employee — PT. Toserba Selamat, Cianjur"
-              dateEvent="February 2020 – July 2024"
+              dateEvent="February 2019 – July 2024"
               points={[
                 `Provided daily in-person customer service to 200+ customers in a fast-paced retail environment`,
                 `Assisted in inventory management and restocking, reducing out-of-stock issues by 15%`,
@@ -242,7 +242,7 @@ function TabExperience() {
             />
             <SectionCard
               title="IT Intern — PT. Baraya Telematika Nusantara, Jatinangor"
-              dateEvent="July 2019 – September 2019"
+              dateEvent="July 2018 – September 2018"
               points={[
                 `Installed CCTV systems across multiple buildings, ensuring full area coverage with no blind spots`,
                 `Conducted routine maintenance to maintain 100% system uptime`,
