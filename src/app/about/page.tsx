@@ -241,7 +241,7 @@ function TabExperience() {
               ]}
             />
             <SectionCard
-              title="IT Intern — PT. Baraya Telematika Nusantara, Jatinangor"
+              title="Internship — PT. Baraya Telematika Nusantara, Jatinangor"
               dateEvent="July 2018 – September 2018"
               points={[
                 `Installed CCTV systems across multiple buildings, ensuring full area coverage with no blind spots`,
@@ -249,7 +249,7 @@ function TabExperience() {
               ]}
             />
             <SectionCard
-              title="IT Intern — West Java Housing and Settlement Agency (Dinas Perumahan dan Permukiman), Bandung"
+              title="Internship — West Java Housing and Settlement Agency (Dinas Perumahan dan Permukiman), Bandung"
               dateEvent="January 2018 – March 2018"
               points={[
                 `Configured LAN networks, installed routers/switches, and performed local device setup`,
