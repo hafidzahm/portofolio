@@ -37,11 +37,11 @@ function CardJumbotron() {
         </p>
         <Link
           href={
-            "https://drive.google.com/file/d/1KN6PHK6KZDMNeqweTN3j4OXTuIqDY_cp/view?usp=drive_link"
+            "https://drive.google.com/file/d/1TIrsLFapav3EtH5qsxdAtyJn7LKScAyZ/view?usp=drive_link"
           }
           className="cursor-pointer"
         >
-          {/* last update on 01.07 ver. 01.07 */}
+          {/* last update on 01.07 ver. 01.07-revision */}
           <Magnet padding={100} disabled={false} magnetStrength={2}>
             <Button>Download CV</Button>
           </Magnet>
