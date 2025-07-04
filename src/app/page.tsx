@@ -37,7 +37,7 @@ function CardJumbotron() {
         </p>
         <Link
           href={
-            "https://drive.google.com/file/d/1013RBtZnrouMbNpCrZ1YcqDNA_KrGlgP/view?usp=drive_link"
+            "https://drive.google.com/file/d/18KS-DqFxMIH-0QkaQC9lFuzY4VzR72WP/view?usp=drive_link"
           }
           className="cursor-pointer"
         >
