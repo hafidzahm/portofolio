@@ -129,6 +129,14 @@ function CardTechStack() {
               <BadgeTechStack link="/brand-vercel.svg" nameIcon="Vercel" />
               <BadgeTechStack link="/firebase.svg" nameIcon="Firebase" />
               <BadgeTechStack link="/Azios.png" nameIcon="Axios" />
+              <BadgeTechStack link="/nest.svg" nameIcon="NestJS" />
+              <BadgeTechStack link="/prisma.svg" nameIcon="Prisma ORM" />
+              <BadgeTechStack
+                link="/visual-studio-code.svg"
+                nameIcon="VSCode"
+              />
+              <BadgeTechStack link="/jest.png" nameIcon="Jest" />
+              <BadgeTechStack link="/postman.svg" nameIcon="Postman" />
             </div>
           </CardContent>
         </Card>
@@ -232,6 +240,15 @@ function TabExperience() {
       <TabsContent value="work">
         <Card>
           <CardContent className="grid gap-6">
+            <SectionCard
+              title="Fullstack Developer (Freelance) — Universitas Sanatha Dharma (USD Library Team)"
+              dateEvent="June 2025 – September 2025"
+              points={[
+                `Built the Library Assistant application using Fullstack Next.js (Frontend & Backend) with MongoDB as the primary database.`,
+                `Contributed to debugging and refactoring book, thesis, and dissertation card components to improve performance and maintainability`,
+                `Developed a simple AI chatbot powered by Gemini AI as an Internal Assistant Library to enhance user interaction. Collaborated in a team of 4 developers, ensuring smooth coordination and successful project delivery.`,
+              ]}
+            />
             <SectionCard
               title="Retail Employee — PT. Toserba Selamat, Cianjur"
               dateEvent="February 2019 – July 2024"

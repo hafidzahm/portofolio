@@ -100,3 +100,13 @@ export const mongodb: IconType = {
   iconInitial: "MON",
   iconName: "MongoDB",
 };
+export const nest: IconType = {
+  iconStack: "/nest.svg",
+  iconInitial: "NEST",
+  iconName: "NestJS",
+};
+export const prisma: IconType = {
+  iconStack: "/prisma.svg",
+  iconInitial: "PRM",
+  iconName: "Prisma ORM",
+};
