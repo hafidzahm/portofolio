@@ -44,7 +44,7 @@ function CardJumbotron() {
           <Card>
             <div className="grid md:grid-cols-2 items-start sm:grid-cols-1 p-2.5 gap-5 max-w-6xl">
               <ImageCard
-                caption="Quizz!"
+                caption="Quizz! (MVP, UNDER DEVELOPMENT PROGRESS)"
                 imageUrl="/quizzz.png"
                 icon={[
                   sequelize,
@@ -58,14 +58,29 @@ function CardJumbotron() {
                   axios,
                 ]}
                 projectLink="https://quizzz-swart.vercel.app/"
-                description="Welcome to Quizzz — your go-to app for fun, fast, and smart quizzes! Challenge yourself, learn new things, or just enjoy a quick brain break. From general knowledge to science and pop culture, there’s always something new to try."
+                description="Welcome to Quizzz — your go-to app for fun, fast, and smart quizzes! Challenge yourself, learn new things, or just enjoy a quick brain break. From general knowledge to science and pop culture, there’s always something new to try.
+                            In this MVP Phase, you dont need to register new account, just fill random username and password.
+                "
               ></ImageCard>
               <ImageCard
-                caption="Pendekin API (PROGRESS)"
-                imageUrl="/pendekin-api.png"
-                icon={[sequelize, express, node, redis]}
-                projectLink="https://pendekin-api.hafizh.web.id/r/pendekin-postman-docs"
-                description="Pendekin API is a URL shortener backend service that allows users to register, log in, and create short links that redirect to original URLs via endpoints like /r/:shortId. It includes JWT authentication and user-specific link management features."
+                caption="Pendekin (STABLE VERSION, UNDER DEVELOPMENT PROGRESS)"
+                imageUrl="/shortener.png"
+                icon={[
+                  sequelize,
+                  express,
+                  node,
+                  redis,
+                  react,
+                  typescript,
+                  shadcn,
+                  tailwind,
+                  axios,
+                  firebase,
+                ]}
+                projectLink="https://pendekin.hafizh.web.id"
+                description="Pendekin is a URL shortener service that allows users to register, log in, and create short links that redirect to original URLs via endpoints like /gas/:linkName. It includes JWT authentication and user-specific link management features.
+                            Login with demo account: demo@example.com with password demo123, or register new account.
+                "
               ></ImageCard>
               <ImageCard
                 caption="Geraimedia"
@@ -122,7 +137,7 @@ function CardJumbotron() {
                   by Google implementation, implementing Firebase for client hosting and AWS for server hosting. Reload first before launching demo (loading issue). Email/ password demo: demo@example.com / demo123"
               ></ImageCard>
               <ImageCard
-                caption="TechNows | Read, Save, and Summarize News"
+                caption="TechNows | Read, Save, and Summarize News (EXTERNAL API DOWN, UNDER DEVELOPMENT)"
                 imageUrl="/technows.png"
                 icon={[
                   tailwind,

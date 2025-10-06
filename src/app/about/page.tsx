@@ -247,6 +247,7 @@ function TabExperience() {
                 `Built the Library Assistant application using Fullstack Next.js (Frontend & Backend) with MongoDB as the primary database.`,
                 `Contributed to debugging and refactoring book, thesis, and dissertation card components to improve performance and maintainability`,
                 `Developed a simple AI chatbot powered by Gemini AI as an Internal Assistant Library to enhance user interaction. Collaborated in a team of 4 developers, ensuring smooth coordination and successful project delivery.`,
+                `Project can be visit on https://library-assistant-usd.vercel.app . Login with student with NIM: 219832871 and password: mahasiswasatu`,
               ]}
             />
             <SectionCard
