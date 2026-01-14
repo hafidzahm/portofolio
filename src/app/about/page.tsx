@@ -241,6 +241,13 @@ function TabExperience() {
         <Card>
           <CardContent className="grid gap-6">
             <SectionCard
+              title="Fullstack Engineer — PT. Neuron Teknologi Indonesia"
+              dateEvent="October 2025 – now"
+              points={[
+                `Built an web-automated internal marketing services, using Puppeteer and Playwright.`,
+              ]}
+            />
+            <SectionCard
               title="Fullstack Developer (Freelance) — Universitas Sanatha Dharma (USD Library Team)"
               dateEvent="June 2025 – September 2025"
               points={[

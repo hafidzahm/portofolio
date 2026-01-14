@@ -37,13 +37,13 @@ function CardJumbotron() {
         </p>
         <Link
           href={
-            "https://drive.google.com/file/d/19LXUKCUDwkKIvngMvARxwq9RsCgoIgQj/view?usp=sharing"
+            "https://drive.google.com/file/d/1Pnjlnz4UyIpeNW3M50t25LEYpNeSS0wB/view?usp=sharing"
           }
           className="cursor-pointer"
         >
-          {/* last update on 28-09*/}
+          {/* last update on 14-01-2026*/}
           <Magnet padding={100} disabled={false} magnetStrength={2}>
-            <Button>Download CV</Button>
+            <Button className="cursor-pointer">Download CV</Button>
           </Magnet>
         </Link>
       </div>
@@ -97,11 +97,11 @@ function CardQuotes() {
       <footer className="flex flex-col w-full justify-center items-center ">
         <h1 className="font-extralight text-center">hafizhahm123@gmail.com</h1>
         <h1 className="font-extralight text-center">
-          Last Update on October 06, 2025
+          Last Update on January 14, 2026
         </h1>
-        {/* CV: 01.07  */}
+        {/* CV: 14-01-2026  */}
         <h1 className="font-extralight text-center">
-          - All right reserved, 2025.
+          - All right reserved, 2026.
         </h1>
       </footer>
     </>
